@@ -51,15 +51,10 @@ const Weather = [
     },
 ];
 
-
-function displayWeather1(){
-    let Ústí  = {name:"", description:"" ,temperature: 0}
-
-    for(Weather){
-        if 
-    }
-
-    document.getElementById("Počasí").innerHTML = Ústí 
+function displayWeather(Name) {
+    const city = Weather.find(item => item.name === Name);
+    if (city) {
+        const weatherInfo = `Město: ${city.name}, Teplota: ${city.temperature}°C, Popis: ${city.description}`;
+        document.getElementById("Info").innerText = weatherInfo;
+    } 
 }
-
-
