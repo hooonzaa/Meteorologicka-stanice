@@ -2,59 +2,59 @@ const Weather = [
     {
         name: "Praha",
         temperature: 15,
-        description: "Slunečno"
+        climate: "Slunečno"
     },
     {
         name: "Brno",
         temperature: 14,
-        description: "Oblačno"
+        climate: "Oblačno"
     },
     {
         name: "Louny",
         temperature: 18,
-        description: "Jasno"
+        climate: "Jasno"
     },
     {
         name: "Žatec",
         temperature: 15,
-        description: "Slunečno"
+        climate: "Slunečno"
     },
     {
         name: "Bezdekov",
         temperature: 14,
-        description: "Oblačno"
+        climate: "Oblačno"
     },
     {
         name: "Jirkov",
         temperature: 18,
-        description: "Jasno"
+        climate: "Jasno"
     },
     {
         name: "Františkovi Lázně",
         temperature: 8,
-        description: "Zataženo"
+        climate: "Zataženo"
     },
     {
         name: "Chomutov",
         temperature: 0,
-        description: "Jasno"
+        climate: "Jasno"
     },
     {
         name: "Most",
         temperature: 18,
-        description: "Slunečno"
+        climate: "Slunečno"
     },
     {
         name: "Ústí",
         temperature: -20,
-        description: "Oblačno"
+        climate: "Oblačno"
     },
 ];
 
 function displayWeather(Name) {
     const city = Weather.find(item => item.name === Name);
     if (city) {
-        const weatherInfo = `Město: ${city.name}, Teplota: ${city.temperature}°C, Popis: ${city.description}`;
+        const weatherInfo = `Město: ${city.name}, Teplota: ${city.temperature}°C, Popis: ${city.climate}`;
         document.getElementById("Info").innerText = weatherInfo;
     } 
 }
